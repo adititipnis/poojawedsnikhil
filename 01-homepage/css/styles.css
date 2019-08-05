@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button {
 	margin: 0;
 	padding: 0;
 	color: palegoldenrod;
+	font-family: Helvetica, Arial, sans-serif
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -167,13 +168,13 @@ b.light-color {
 	padding: 15px 30px;
 	border-radius: 1px;
 	letter-spacing: 2px;
-	border: 1px solid #E45F74;
-	background: #E45F74;
+	border: 1px solid #ffd123;
+	background: #ffd123;
 	color: palegoldenrod;
 }
 
 .btn:hover {
-	color: #E45F74;
+	color: #ffd123;
 	background: none;
 }
 
@@ -182,11 +183,11 @@ b.light-color {
 	padding: 15px 30px;
 	border-radius: 1px;
 	letter-spacing: 2px;
-	border: 1px solid #E45F74;
+	border: 1px solid #ffd123;
 }
 
 .btn-2:hover {
-	background: #E45F74;
+	background: #ffd123;
 	color: palegoldenrod;
 }
 
@@ -208,7 +209,7 @@ b.light-color {
 	right: 0;
 	height: 2px;
 	transition: all .3s;
-	background: #E45F74;
+	background: #ffd123;
 }
 
 .border-btn:before {
@@ -220,7 +221,7 @@ b.light-color {
 	height: 2px;
 	transform: translateX(-130%);
 	transition: all .3s;
-	background: #E45F74;
+	background: #ffd123;
 }
 
 .border-btn:hover:after {
@@ -243,7 +244,7 @@ b.light-color {
 .section .heading .icon {
 	font-size: 18px;
 	margin-top: 20px;
-	color: #E45F74;
+	color: #ffd123;
 }
 
 .section .heading .title p {
@@ -398,22 +399,23 @@ b.light-color {
 --------------------------------- */
 
 header {
-    left: 0;
-    right: 0;
-    /* top: 20px; */
-    z-index: 1000;
-    font-size: .95em;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-    color: palegoldenrod;
+	left: 0;
+	right: 0;
+	/* top: 20px; */
+	z-index: 1000;
+	font-size: .95em;
+	/* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+	/* color: #ffd123; */
 }
 
 header .container {
 	width: 100vw;
-    max-width: 100%;
+	max-width: 100%;
 	/* background-image: linear-gradient(to left, #FF416C, #FF416C, #FF4B2B); */
 	background-image: linear-gradient(to right, #ED213A, #93291E);
 	color: palegoldenrod;
 	box-shadow: 0 1px 20px 0px #4e39397a;
+	z-index: 1000;
 }
 
 /* MIDDLE AREA */
@@ -443,6 +445,7 @@ header .main-menu>li>a {
 	border: 2px solid transparent;
 	border-radius: 2px;
 	background: transparent;
+    font-size: 1.1rem;
 }
 
 header .visible.main-menu {
@@ -540,14 +543,13 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	background-repeat: no-repeat;
 	/* background-image: linear-gradient(to left, #FF416C, #FF416C, #FF4B2B); */
 	background-image: linear-gradient(to right, #ED213A, #93291E);
-
 }
 
 .main-slider .rsvp {
 	width: 38%;
-    text-align: center;
-    align-self: center;
-    margin-bottom: 3%;
+	text-align: center;
+	align-self: center;
+	margin-bottom: 3%;
 }
 
 .main-slider .image {
@@ -563,6 +565,8 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	/* margin-left: 61%; */
 	margin-top: -34%;
 	width: 90%;
+	transform: rotate(7deg);
+    border: 10px solid palegoldenrod;
 }
 
 .rsvp .info {
@@ -585,6 +589,8 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 
 .rsvp span {
 	color: palegoldenrod;
+	margin: 4%;
+	width: 100%;
 }
 
 .rsvp input::placeholder {
@@ -596,18 +602,19 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 }
 
 .rsvp button {
-	padding: 10px 70px;
-    color: palegoldenrod;
-    font-size: 40px;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.2);
+	padding: 1% 10%;
+	color: #ffd123;
+	font-size: 2rem;
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.2);
 	font-family: 'Cinzel Decorative', cursive;
 	margin-top: 10%;
+	transition: all 100ms;
 }
 
 .rsvp button:hover {
-	color: #E45F74;
-	background-color: palegoldenrod;
+	/* color: #ffd123; */
+	/* background-color: palegoldenrod; */
 	box-shadow: 0 1px 20px 0px #4e39397a;
 	font-weight: bold;
 }
@@ -638,7 +645,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 .slider-content .title i {
 	transform: translateY(10px);
 	font-size: .8em;
-	color: #E45F74;
+	color: #ffd123;
 }
 
 /* ---------------------------------
@@ -782,7 +789,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 .w-detail .icon {
 	font-size: 3.5em;
 	line-height: 1;
-	color: #E45F74;
+	color: #ffd123;
 }
 
 /* ---------------------------------
@@ -853,7 +860,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 .contact-area .phone {
 	margin: 10px 0;
 	font-size: 2em;
-	color: #E45F74;
+	color: #ffd123;
 }
 
 /* ---------------------------------
@@ -892,7 +899,7 @@ footer ul>li>a {
 }
 
 footer .logo-wrapper .icon {
-	color: #E45F74;
+	color: #ffd123;
 }
 
 footer .logo {
@@ -961,13 +968,13 @@ footer .copyright {
 .reception-icon {
 	font-size: 3.5em;
 	line-height: 1;
-	color: #E45F74;
+	color: #ffd123;
 }
 
 .location {
 	font-size: 3.5em;
 	line-height: 1;
-	color: #E45F74;
+	color: #ffd123;
 	margin: 2%;
 	display: inline-flex;
 	align-items: center;
@@ -980,9 +987,13 @@ footer .copyright {
 }
 
 .location:hover {
-	background-color: #E45F74;
+	background-color: #ffd123;
 	color: palegoldenrod;
 	box-shadow: 0px 4px 8px 0px #333;
+}
+
+.section .rsvp {
+	display: none;
 }
 
 @media (max-width: 800px) {
@@ -993,6 +1004,12 @@ footer .copyright {
 		background-size: 110%;
 		background-repeat: no-repeat;
 		background-position-y: -22vh;
+	}
+	.main-slider div {
+		display: none;
+	}
+	#start {
+		margin-top: 15%
 	}
 	.counter-area-1 .title, .counter-area-2 .title {
 		margin-top: 0vh;
