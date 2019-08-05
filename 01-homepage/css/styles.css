@@ -36,6 +36,7 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
 html {
 	font-size: 100%;
 	height: 100%;
@@ -58,9 +59,10 @@ body {
 	color: #333;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button {
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button {
 	margin: 0;
 	padding: 0;
+	color: palegoldenrod;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,7 +78,7 @@ p {
 	line-height: 1.6;
 	font-size: 1.05em;
 	font-weight: 400;
-	color: #555;
+	/* color: #555; */
 }
 
 h1 {
@@ -116,7 +118,7 @@ a, button {
 
 a:focus, a:active, a:hover, button:focus, button:active, button:hover, a b.light-color:hover {
 	text-decoration: none;
-	color: #E45F74;
+	color: palegoldenrod;
 }
 
 b {
@@ -167,7 +169,7 @@ b.light-color {
 	letter-spacing: 2px;
 	border: 1px solid #E45F74;
 	background: #E45F74;
-	color: #fff;
+	color: palegoldenrod;
 }
 
 .btn:hover {
@@ -185,7 +187,7 @@ b.light-color {
 
 .btn-2:hover {
 	background: #E45F74;
-	color: #fff;
+	color: palegoldenrod;
 }
 
 .border-btn {
@@ -231,6 +233,7 @@ b.light-color {
 
 .section {
 	padding: 100px 0 70px;
+	background-image: linear-gradient(to right, #ED213A, #93291E);
 }
 
 .section .heading {
@@ -248,7 +251,7 @@ b.light-color {
 }
 
 .section .heading .icon.color-white {
-	color: #fff;
+	color: palegoldenrod;
 }
 
 .section .heading .heading-bottom {
@@ -298,7 +301,7 @@ b.light-color {
 }
 
 .color-white {
-	color: #fff;
+	color: palegoldenrod;
 }
 
 .display-table {
@@ -365,7 +368,7 @@ b.light-color {
 	top: 30px;
 	right: 30px;
 	z-index: 666;
-	color: #fff;
+	color: palegoldenrod;
 }
 
 .thumbnails {
@@ -395,14 +398,22 @@ b.light-color {
 --------------------------------- */
 
 header {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 20px;
-	z-index: 1000;
-	font-size: .95em;
-	border-bottom: 1px solid rgba(255, 255, 255, 1);
-	color: #fff;
+    left: 0;
+    right: 0;
+    /* top: 20px; */
+    z-index: 1000;
+    font-size: .95em;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    color: palegoldenrod;
+}
+
+header .container {
+	width: 100vw;
+    max-width: 100%;
+	/* background-image: linear-gradient(to left, #FF416C, #FF416C, #FF4B2B); */
+	background-image: linear-gradient(to right, #ED213A, #93291E);
+	color: palegoldenrod;
+	box-shadow: 0 1px 20px 0px #4e39397a;
 }
 
 /* MIDDLE AREA */
@@ -421,8 +432,8 @@ header .logo img {
 
 header .main-menu {
 	font-weight: 500;
-	float: right;
 	margin: 0px -15px;
+	text-align: center;
 }
 
 header .main-menu>li>a {
@@ -484,7 +495,7 @@ header .main-menu li.drop-down>ul.drop-down-inner {
 /* DROPDOWN HOVER */
 
 header .main-menu>li>a:hover, header .main-menu li a.mouseover {
-	border-color: #E45F74;
+	border-color: palegoldenrod;
 }
 
 header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
@@ -518,14 +529,87 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 --------------------------------- */
 
 .main-slider {
+	display: flex;
 	height: 100vh;
-	position: relative;
+	width: 100vw;
 	z-index: 1;
-	background-image: url(../../images/savethedate2.jpg);
+	background-image: url(c);
 	background-size: contain;
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	/* background-image: linear-gradient(to left, #FF416C, #FF416C, #FF4B2B); */
+	background-image: linear-gradient(to right, #ED213A, #93291E);
+
+}
+
+.main-slider .rsvp {
+	width: 38%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 3%;
+}
+
+.main-slider .image {
+	width: 62%;
+}
+
+.main-slider img {
+	object-position: bottom;
+	/* box-shadow: 10px 0px 8px 8px #000000 inset; */
+	background-color: white;
+	/* box-shadow: 5px -1px 16px 8px #aaa; */
+	/* border: 28px solid #fff; */
+	/* margin-left: 61%; */
+	margin-top: -34%;
+	width: 90%;
+}
+
+.rsvp .info {
+	text-align: left;
+}
+
+.rsvp .email {
+	width: 85%;
+}
+
+.rsvp input {
+	background: none;
+	border: none;
+	border-bottom: 2px white solid;
+	color: palegoldenrod;
+	margin: 4%;
+	border-bottom-left-radius: 5px;
+	padding: 1%;
+}
+
+.rsvp span {
+	color: palegoldenrod;
+}
+
+.rsvp input::placeholder {
+	color: #ccc;
+}
+
+.rsvp input:focus {
+	outline: none;
+}
+
+.rsvp button {
+	padding: 10px 70px;
+    color: palegoldenrod;
+    font-size: 40px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+	font-family: 'Cinzel Decorative', cursive;
+	margin-top: 10%;
+}
+
+.rsvp button:hover {
+	color: #E45F74;
+	background-color: palegoldenrod;
+	box-shadow: 0 1px 20px 0px #4e39397a;
+	font-weight: bold;
 }
 
 /* .main-slider:after {
@@ -574,8 +658,9 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	left: 0;
 	right: 0;
 	z-index: -1;
-	opacity: .8;
-	background: url(../../images/Background_Circle.png);
+	opacity: 1;
+	/* background: url(../../images/Background_Circle.png); */
+	background-image: linear-gradient(to right, #ED213A, #93291E);
 }
 
 /* ---------------------------------
@@ -587,7 +672,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	z-index: 1;
 	background-image: url(../../images/pic1.JPG);
 	background-size: 120%;
-	color: #fff;
+	color: palegoldenrod;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -709,7 +794,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	z-index: 1;
 	background-image: url(../../images/pic2.JPG);
 	background-size: 110%;
-	color: #fff;
+	color: palegoldenrod;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: -12vh;
@@ -740,7 +825,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 
 .ceremony .desc {
 	margin-bottom: 15px;
-	color: #fff;
+	color: palegoldenrod;
 }
 
 /* ---------------------------------
@@ -798,7 +883,8 @@ footer:after {
 	right: 0;
 	z-index: -1;
 	opacity: .8;
-	background: url(../../images/Background_Circle.png);
+	/* background: url(../../images/Background_Circle.png); */
+	background-image: linear-gradient(to right, #ED213A, #93291E);
 }
 
 footer ul>li>a {
@@ -860,7 +946,7 @@ footer .email-area .submit-btn {
 	line-height: 55px;
 	border-radius: 100px;
 	background: #E55D73;
-	color: #fff;
+	color: palegoldenrod;
 }
 
 footer .email-area .submit-btn:hover {
@@ -895,25 +981,23 @@ footer .copyright {
 
 .location:hover {
 	background-color: #E45F74;
-	color: #fff;
+	color: palegoldenrod;
 	box-shadow: 0px 4px 8px 0px #333;
 }
 
 @media (max-width: 800px) {
 	.main-slider {
 		height: 55vh;
-    background-image: url(../../images/savethedate.jpeg);
-    background-position: center;
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position-y: -22vh;
+		background-image: url(../../images/savethedate.jpeg);
+		background-position: center;
+		background-size: 110%;
+		background-repeat: no-repeat;
+		background-position-y: -22vh;
 	}
-
 	.counter-area-1 .title, .counter-area-2 .title {
 		margin-top: 0vh;
 		font-size: 2em;
 	}
-
 	.counter-area-2 {
 		background-size: 105%;
 		background-position-y: -4vh;

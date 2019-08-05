@@ -1,5 +1,6 @@
-(function ($) {
 
+
+(function ($) {
 	"use strict";
 
 	// Your web app's Firebase configuration
@@ -14,55 +15,35 @@
 	};
 	// Initialize Firebase
 	firebase.initializeApp(firebaseConfig);
-
-	// JQUERY LIGHT BOX
-
-	$('#rsvp').click(function () {
-		var guestEntry = { fname: $('#fname').val(), lname: $('#lname').val(), email: $('#email').val(), plusone: $('#plusone').prop("checked") };
-		var ref = new firebase.database().ref('Guests')
-		ref.push(guestEntry)
+	$('.guest-template').hide()
+	firebase.database().ref('Guests').once('value').then(function (snapshot) {
+		var arr = snapshotToArray(snapshot)
+		console.log(arr)
+		arr.forEach(item => {
+			var guest = $('.guest-template').clone()
+			$('#fname', guest)[0].innerHTML = item.fname
+			$('#lname', guest)[0].innerHTML = item.lname
+			$('#email', guest)[0].innerHTML = item.email
+			$('#plusone', guest)[0].innerHTML = item.plusone ? "Yes" : "No"
+			$(guest).removeClass('guest-template')
+			$(guest).show()
+			$('.guest-list').append(guest)
+		})
 	});
-
-	if ($.isFunction($.fn.fluidbox)) {
-		$('a').fluidbox();
-	}
-
-
-	$('a[href="#"]').on('click', function (event) {
-		return;
-	});
-
-	// COUNTDOWN TIME 
-
-	countdownTime();
-
-
-	$('[data-nav-menu]').on('click', function (event) {
-
-		var $this = $(this),
-			visibleHeadArea = $this.data('nav-menu');
-
-		$(visibleHeadArea).toggleClass('visible');
-
-	});
-
-
-	var winWidth = $(window).width();
-	dropdownMenu(winWidth);
-
-	$(window).on('resize', function () {
-		dropdownMenu(winWidth);
-
-	});
-
-	// Circular Progress Bar
-
-	var isAnimated = false;
-
-
 })(jQuery);
 
+function snapshotToArray(snapshot) {
+	var returnArr = [];
 
+	snapshot.forEach(function (childSnapshot) {
+		var item = childSnapshot.val();
+		item.key = childSnapshot.key;
+
+		returnArr.push(item);
+	});
+
+	return returnArr;
+};
 
 function countdownTime() {
 
