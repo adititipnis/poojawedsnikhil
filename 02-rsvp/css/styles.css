@@ -392,7 +392,6 @@ header {
 	top: 15px;
 	z-index: 1000;
 	font-size: .95em;
-	border-bottom: 1px solid rgba(255, 255, 255, .1);
 	color: #fff;
 }
 
@@ -516,7 +515,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	height: 500px;
 	position: relative;
 	z-index: 1;
-	background-image: url(../../images/counter-1-1600x600.jpg);
+	background-image: url(../../images/pic1.JPG);
 	background-size: cover;
 	color: #fff;
 }
@@ -724,4 +723,14 @@ header conta
 
 .guest:hover {
 	box-shadow: 0 0 20px 3px #eee;
+}
+
+.rsvp {
+	margin: 0 30%;
+}
+
+@media (max-width: 800px) {
+	.rsvp {
+		margin: auto;
+	}
 }
