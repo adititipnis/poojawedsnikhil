@@ -2,18 +2,7 @@
 
 	"use strict";
 
-	// Your web app's Firebase configuration
-	var firebaseConfig = {
-		apiKey: "AIzaSyBfd6NqIwwnZr114tIGeVIRYub_C8wNWeU",
-		authDomain: "nikhilwedspooja-1219b.firebaseapp.com",
-		databaseURL: "https://nikhilwedspooja-1219b.firebaseio.com/",
-		projectId: "nikhilwedspooja-1219b",
-		storageBucket: "",
-		messagingSenderId: "137282612337",
-		appId: "1:137282612337:web:c192b4ce0ff4191d"
-	};
-	// Initialize Firebase
-	firebase.initializeApp(firebaseConfig);
+	
 
 	// JQUERY LIGHT BOX
 
@@ -263,4 +252,5 @@ function initMap() {
 	//Associate the styled map with the MapTypeId and set it to display.
 	map.mapTypes.set('styled_map', styledMapType);
 	map.setMapTypeId('styled_map');
+	
 }

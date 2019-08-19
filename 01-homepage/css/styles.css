@@ -484,6 +484,7 @@ header .main-menu li.drop-down>ul.drop-down-inner {
 
 header .main-menu>li>a:hover, header .main-menu li a.mouseover {
 	border-color: #E45F74;
+	background-color: #fff;
 }
 
 header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {

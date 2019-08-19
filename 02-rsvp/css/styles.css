@@ -475,10 +475,12 @@ header .main-menu li.drop-down>ul.drop-down-inner {
 
 header .main-menu>li>a:hover {
 	border-color: #E45F74;
+	background-color: #fff;
 }
 
 header .main-menu li a.mouseover {
 	border-color: #E45F74;
+	background-color: #fff;
 }
 
 header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
@@ -727,6 +729,10 @@ header conta
 
 .rsvp {
 	margin: 0 30%;
+}
+
+#mc_embed_signup {
+	width: 100%
 }
 
 @media (max-width: 800px) {
