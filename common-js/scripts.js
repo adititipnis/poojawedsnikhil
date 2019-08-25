@@ -89,7 +89,7 @@ function dropdownMenu(winWidth) {
 			if ($(this).attr('href') == '#') return false;
 			if ($(this).hasClass('mouseover')) { $(this).removeClass('mouseover'); }
 			else { $(this).addClass('mouseover'); }
-			return false;
+			
 		});
 	}
 

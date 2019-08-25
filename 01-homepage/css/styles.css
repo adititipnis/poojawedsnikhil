@@ -906,7 +906,7 @@ footer .copyright {
 
 	.main-slider {
 		height: 55vh;
-		background-image: url(../../images/savethedate.jpeg);
+		/* background-image: url(../../images/savethedate.jpeg); */
 		background-position: center;
 		background-size: 110%;
 		background-repeat: no-repeat;
