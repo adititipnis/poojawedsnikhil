@@ -111,7 +111,7 @@ a, button {
 
 a:focus, a:active, a:hover, button:focus, button:active, button:hover, a b.light-color:hover {
 	text-decoration: none;
-	color: #E45F74;
+	color: #94091f;
 }
 
 b {
@@ -160,13 +160,13 @@ b.light-color {
 	padding: 15px 30px;
 	border-radius: 1px;
 	letter-spacing: 2px;
-	border: 1px solid #E45F74;
-	background: #E45F74;
+	border: 1px solid #94091f;
+	background: #94091f;
 	color: #fff;
 }
 
 .btn:hover {
-	color: #E45F74;
+	color: #94091f;
 	background: none;
 }
 
@@ -175,11 +175,11 @@ b.light-color {
 	padding: 15px 30px;
 	border-radius: 1px;
 	letter-spacing: 2px;
-	border: 1px solid #E45F74;
+	border: 1px solid #94091f;
 }
 
 .btn-2:hover {
-	background: #E45F74;
+	background: #94091f;
 	color: #fff;
 }
 
@@ -201,7 +201,7 @@ b.light-color {
 	right: 0;
 	height: 2px;
 	transition: all .3s;
-	background: #E45F74;
+	background: #94091f;
 }
 
 .border-btn:before {
@@ -213,7 +213,7 @@ b.light-color {
 	height: 2px;
 	transform: translateX(-130%);
 	transition: all .3s;
-	background: #E45F74;
+	background: #94091f;
 }
 
 .border-btn:hover:after {
@@ -235,7 +235,7 @@ b.light-color {
 .section .heading .icon {
 	font-size: 18px;
 	margin-top: 20px;
-	color: #E45F74;
+	color: #94091f;
 }
 
 .section .heading .icon.color-white {
@@ -424,6 +424,9 @@ header .main-menu>li>a {
 	border: 2px solid transparent;
 	border-radius: 2px;
 	background: transparent;
+	font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 header .visible.main-menu {
@@ -476,12 +479,12 @@ header .main-menu li.drop-down>ul.drop-down-inner {
 /* DROPDOWN HOVER */
 
 header .main-menu>li>a:hover {
-	border-color: #E45F74;
+	border-color: #94091f;
 	background-color: #fff;
 }
 
 header .main-menu li a.mouseover {
-	border-color: #E45F74;
+	border-color: #94091f;
 	background-color: #fff;
 }
 
@@ -536,7 +539,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 }
 
 .main-slider .pre-title {
-	color: #E45F74;
+	color: #94091f;
 }
 
 /* ---------------------------------
@@ -562,7 +565,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 
 .contact-area .phone {
 	margin: 10px 0;
-	color: #E45F74;
+	color: #94091f;
 }
 
 .contact-area .email {
@@ -578,7 +581,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 
 .contact-form .pre-title {
 	margin: 10px 0;
-	color: #E45F74;
+	color: #94091f;
 }
 
 .contact-form input, .contact-form select, .contact-form label {
@@ -638,7 +641,7 @@ footer ul>li>a {
 }
 
 footer .logo-wrapper .icon {
-	color: #E45F74;
+	color: #94091f;
 }
 
 footer .logo {
@@ -691,13 +694,13 @@ footer .email-area .submit-btn {
 	width: 55px;
 	line-height: 55px;
 	border-radius: 100px;
-	background: #E55D73;
+	background: #94091f;
 	color: #fff;
 }
 
 footer .email-area .submit-btn:hover {
 	background: #000;
-	color: #E55D73;
+	color: #94091f;
 }
 
 footer .copyright {
