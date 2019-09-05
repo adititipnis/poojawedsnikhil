@@ -433,7 +433,7 @@ header .main-menu>li>a {
 	border: 2px solid transparent;
 	border-radius: 2px;
 	font-family: sans-serif;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -503,6 +503,20 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 .nav-rsvp:hover {
 	border-color: #fff;
 	color: #94091f;
+}
+
+#rsvp-button {
+	background: #94091f;
+    color: white;
+    border-radius: 5rem;
+    padding: 1% 5%;
+    font-family: 'Playball', cursive;
+	text-shadow: -2px 3px 6px #333;
+	transition: all .3s;
+}
+
+#rsvp-button:hover {
+	padding: 2% 10%;
 }
 
 @keyframes full-opacity-anim {
