@@ -422,6 +422,8 @@ header .main-menu {
 	font-weight: 500;
 	float: right;
 	margin: 0px -15px;
+	box-shadow: 8px 5px 11px #8c8c8c;
+    text-shadow: 8px 5px 11px #8c8c8c;
 }
 
 header .main-menu>li>a {
@@ -518,14 +520,30 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 --------------------------------- */
 
 .main-slider {
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	z-index: 1;
-	background-image: url(../../images/pic2.jpg);
+	background-image: url(../../images/4C2A1738-01.jpeg);
 	background-size: contain;
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+.main-slider-accom {
+	height: 90vh;
+	position: relative;
+	z-index: 1;
+	background-image: url(../../images/4C2A2447.JPG);
+	background-size: contain;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.main-title {
+	color: white;
+	text-shadow: 8px 5px 11px black;
 }
 
 /* .main-slider:after {

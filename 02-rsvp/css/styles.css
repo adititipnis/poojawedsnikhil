@@ -413,6 +413,8 @@ header .main-menu {
 	font-weight: 500;
 	float: right;
 	margin: 0px -15px;
+	box-shadow: 8px 5px 11px #8c8c8c4d;
+    text-shadow: 8px 5px 11px #8c8c8c4d;
 }
 
 header .main-menu>li>a {
@@ -733,6 +735,22 @@ header conta
 
 #mc_embed_signup {
 	width: 100%
+}
+
+.main-slider-rsvp {
+	height: 90vh;
+	position: relative;
+	z-index: 1;
+	background-image: url(../../images/4C2A2436-01.jpeg);
+	background-size: contain;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.main-title {
+	color: white;	
+    text-shadow: 8px 5px 11px black;
 }
 
 @media (max-width: 800px) {
