@@ -526,7 +526,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	height: 90vh;
 	position: relative;
 	z-index: 1;
-	background-image: url(../../images/4C2A1738-01.jpeg);
+	/* background-image: url(../../images/4C2A1738-01.jpeg); */
 	background-size: contain;
 	background-position: center;
 	background-size: 100%;
