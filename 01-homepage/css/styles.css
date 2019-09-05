@@ -423,7 +423,7 @@ header .main-menu {
 	float: right;
 	margin: 0px -15px;
 	box-shadow: 8px 5px 11px #8c8c8c;
-    text-shadow: 8px 5px 11px #8c8c8c;
+	text-shadow: 8px 5px 11px #8c8c8c;
 }
 
 header .main-menu>li>a {
@@ -432,10 +432,9 @@ header .main-menu>li>a {
 	padding: 0 15px;
 	border: 2px solid transparent;
 	border-radius: 2px;
-	background: transparent;
 	font-family: sans-serif;
-    font-size: 1.1rem;
-    font-weight: bold;
+	font-size: 1.1rem;
+	font-weight: bold;
 }
 
 header .visible.main-menu {
@@ -497,6 +496,15 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 	animation: full-opacity-anim .2s forwards;
 }
 
+.nav-rsvp {
+	background: #94091f;
+}
+
+.nav-rsvp:hover {
+	border-color: #fff;
+	color: #94091f;
+}
+
 @keyframes full-opacity-anim {
 	0% {
 		opacity: 0;
@@ -523,7 +531,7 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 --------------------------------- */
 
 .main-slider {
-	height: 90vh;
+	/* height: 90vh; */
 	position: relative;
 	z-index: 1;
 	/* background-image: url(../../images/4C2A1738-01.jpeg); */
@@ -920,11 +928,7 @@ footer .copyright {
 	box-shadow: 0px 4px 8px 0px #333;
 }
 
-
-
 @media (max-width: 800px) {
-	
-
 	.main-slider {
 		height: 55vh;
 		/* background-image: url(../../images/savethedate.jpeg); */
